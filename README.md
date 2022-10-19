@@ -39,6 +39,19 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+
+### `Cambio de nombres a documentos`
+
+Se hizo el cambio de nombres al documento App y sus derivados a Login para luego reubicarlo a la carpeta Login dentro de la carpeta Pages para tener un mejor posicionamiento de ellos
+
+### `Intalacion de miu react`
+
+Se instalaron varios componentes de react para los estilos de la pagina de Login, entre esos Bootstrap, Fontawesome, miu/Styles y otros.
+
+### `Trabajo de la pagina Login`
+
+Se empezo a editar la pagina de Login combinando diferentes tipos de estilos para un mejor esempeño de este
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
