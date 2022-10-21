@@ -1,101 +1,58 @@
-*, ::before, ::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .body {
-  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wave {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container {
+  width: 100vw;
   height: 100vh;
-  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
 }
 
-.left-form {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  float: left;
-  background: #fff url('../Images/kobawallpaper.jpg') no-repeat center; 
-  background-size: cover;
-}
-
-.right-form {
-  width: 50%;
-  height: 100%;
-  margin: 0;
-  float: left;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-}
-
-.right-form form {
-  height: 100%;
-  widht: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.img {
+  diplay: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.right-form h2 {
-  font-size: 2em;
-  color: #006090;
-  margin: 20px 0;
-  font-weight: bold;
+.img img {
+  width: 500px;
 }
 
-.right-form form > input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 1.2em;
+.login-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-.right-form label {
-  width: 100%;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 20px 0;
+form {
+  width: 360px;
 }
 
-.check {
-  width: 100%;
-  margin: 20px 0;
+.avatar {
+  width: 100px;
 }
 
-.right-form input[type="submit"] {
-  width: 100%;
-  background-color: #006090;
-  color: #ffff;
-  border: none;
-  font-size: 18px;
-  padding: 8px 30px;
+form h2 {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: #3333;
 }
 
-@media only screen and (max-width: 768px) {
-  .left-form {
-    display: none;
-  }
-
-  .right-form {
-    background: #fff url('../Images/kobawallpaper.jpg') no-repeat center; 
-    width: 100%;
-  }
-
-  .right-form form {
-    width: 95%;
-    padding: 0 1em;
-  }
-
-  .right-form label, .check {
-    color: #ffff;
-  }
-
-  input {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-
-  label, .check, h2 {
-    text-shadow: black 0.1em 0.1em 0.2em;
-  }
-}

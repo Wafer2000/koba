@@ -1,25 +1,45 @@
 /* eslint-disable no-unused-vars */
 import "../../Styles/Login.css";
-import KobaWallpaper from "../../Images/kobawallpaper.jpg";
+import wave from '../../Images/wave.png';
+import KobaMARCO from "../../Images/Kobafullbody.png";
+import KobaLOGO from "../../Images/KobaMARCO.png";
+import { FaUserAlt } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
 
 const Login = () => {
   return (
     <div className={`body`}>
-      <section className={`left-form`}></section>
-      <section className={`right-form`}>
-        <form action="" method="post">
-          <h2>Acceso Login</h2>
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="email" />
-          <label for="password">Password:</label>
-          <input type="password" name="password" id="password" />
-          <div className={`check`}>
-            <input type="checkbox" name="" id="" />
-            <span>Recordar</span>
-          </div>
-          <input type="submit" value="Ingresar" />
-        </form>
-      </section>
+      <img className={`wave`} src={wave} alt="Kobafullbody"/>
+      <div className={`container`}>
+        <div className={`img`}>
+          <img src={KobaMARCO} alt="KobaMARCO"/>
+        </div>
+        <div className={`login-container`}>
+          <form action="#">
+            <img src={KobaLOGO} alt="KobaLOGO"/>
+            <h2>Welcome</h2>
+            <div className={`input-div`}>
+              <div className={`i`}>
+                <FaUserAlt/>
+              </div>
+              <div>
+                <h5>Username</h5>
+                <input className={`input`} type="text"/>
+              </div>
+            </div>
+            <div className={`input-div`}>
+              <div className={`i`}>
+                <FaLock/>
+              </div>
+              <div>
+                <h5>Password</h5>
+                <input className={`input`} type="password"/>
+              </div>
+            </div>
+            <input type="submit" className={`btn`} value="Login"/>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };
