@@ -81,7 +81,7 @@ const LoginEmple = () => {
                           value="1"
                           name="Ben"
                         />
-                        <p className={`select-box__input-text`}>Cream</p>
+                        <p className={`select-box__input-text`}>Empresa 1</p>
                       </div>
                       <div className={`select-box__value`}>
                         <input
@@ -91,7 +91,7 @@ const LoginEmple = () => {
                           value="2"
                           name="Ben"
                         />
-                        <p className={`select-box__input-text`}>Cheese</p>
+                        <p className={`select-box__input-text`}>Empresa 2</p>
                       </div>
                       <div className={`select-box__value`}>
                         <input
@@ -101,7 +101,7 @@ const LoginEmple = () => {
                           value="3"
                           name="Ben"
                         />
-                        <p className={`select-box__input-text`}>Milk</p>
+                        <p className={`select-box__input-text`}>Empresa 3</p>
                       </div>
                       <div className={`select-box__value`}>
                         <input
@@ -111,7 +111,7 @@ const LoginEmple = () => {
                           value="4"
                           name="Ben"
                         />
-                        <p className={`select-box__input-text`}>Honey</p>
+                        <p className={`select-box__input-text`}>Empresa 4</p>
                       </div>
                       <div className={`select-box__value`}>
                         <input
@@ -121,7 +121,7 @@ const LoginEmple = () => {
                           value="5"
                           name="Ben"
                         />
-                        <p className={`select-box__input-text`}>Toast</p>
+                        <p className={`select-box__input-text`}>Empresa 5</p>
                       </div>
                       <img
                         className="select-box__icon"
@@ -137,7 +137,7 @@ const LoginEmple = () => {
                           htmlFor="0"
                           aria-hidden="true"
                         >
-                          Cream
+                          Empresa 1
                         </label>
                       </li>
                       <li>
@@ -146,7 +146,7 @@ const LoginEmple = () => {
                           htmlFor="1"
                           aria-hidden="true"
                         >
-                          Cheese
+                          Empresa 2
                         </label>
                       </li>
                       <li>
@@ -155,7 +155,7 @@ const LoginEmple = () => {
                           htmlFor="2"
                           aria-hidden="true"
                         >
-                          Milk
+                          Empresa 3
                         </label>
                       </li>
                       <li>
@@ -164,7 +164,7 @@ const LoginEmple = () => {
                           htmlFor="3"
                           aria-hidden="true"
                         >
-                          Honey
+                          Empresa 4
                         </label>
                       </li>
                       <li>
@@ -173,7 +173,7 @@ const LoginEmple = () => {
                           htmlFor="4"
                           aria-hidden="true"
                         >
-                          Toast
+                          Empresa 5
                         </label>
                       </li>
                     </ul>
