@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+.body, input {
+	font-family: 'Raleway', sans-serif;
+}
+
+.body {
+	background-color: #c8e8f1;
+}
+
+.background1-left-column {
+  background: linear-gradient(180deg, #5b7dcf, #96b3ff);
+}
+
+.background2-left-column {
+  background: linear-gradient(180deg, #00003d, #00276c);
+}
+
+.background1-left-column:hover {
+  background: linear-gradient(180deg, #96b3ff, #5b7dcf);
+}
+
+.background2-left-column:hover {
+  background: linear-gradient(180deg, #00276c, #00003d);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.card {
+  background-color: #efefef;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: 1.1rem;
+  overflow: hidden;
+  width: 30rem;
+  height: 19rem;
+}
+
+.card h6 {
+  opacity: 0.6;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.card h2 {
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem 0;
+  color: #444242;
+}
+
+.left-column {
+  color: #efefef;
+  padding: 1rem;
+  max-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-column h2 {
+  color: #efefef;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	width: 27px;
+	margin-right: 0.3rem;
+
+}
+
+.logo h4 {
+	font-size: 1.1rem;
+	letter-spacing: -0.5px;
+  color: #151111;
+}
+
+.right-column {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.right-column p {
+  font-size: 0.9rem;
+  color: #444242;
+}
+
+.link {
+  align-self: flex-end;
+}
+
+.button {
+	border-radius: 3rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  color: #efefef;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.3rem;
+  letter-spacing: 0.1rem;
+  align-self: flex-end;
+}
+
+.BOSSlogo, .EMPLElogo {
+	display: flex;
+	align-items: center;
+}
+
+.BOSSlogo img, .EMPLElogo img {
+	width: 81px;
+	margin-right: 0.3rem;
+}
+
+@media(max-width: 745px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: flex;
+  }
+  .card {
+    display: flex;
+    margin: 1.1rem;
+    width: auto;
+    height: 19rem;
+    overflow: hidden;
+  }
+}
+
+.card:hover {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  25% { transform: translateX(4px) }
+  50% { transform: translateX(-4px) }
+  75% { transform: translateX(4px) }
+}

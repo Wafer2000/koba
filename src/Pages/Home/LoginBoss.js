@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 import "../../Styles/Login.css";
 import logo from "../../Images/logo.png";
@@ -6,13 +7,12 @@ import image2 from "../../Images/image2.png";
 import image3 from "../../Images/image3.png";
 import { useEffect, useRef, useState } from "react";
 
-const Login = () => {
+const LoginBoss = () => {
   const ref = useRef(null);
   const [isActive, setActive] = useState("false");
 
   useEffect(() => {
     const main2 = ref.current;
-    console.log(main2);
     const toggle_btn = document.querySelectorAll(".toggle");
     const main = document.querySelector("main");
     const bullets = document.querySelectorAll(".bullets span");
@@ -68,7 +68,7 @@ const Login = () => {
                 <div className={`heading`}>
                   <h2>Welcome Back</h2>
                   <h6>Not registred yet? </h6>
-                  <a href="/#" className={`toggle`}>
+                  <a className={`toggle`}>
                     Sign Up
                   </a>
                 </div>
@@ -98,7 +98,7 @@ const Login = () => {
 
                   <p className={`text`}>
                     Forgotten your password or login details?{" "}
-                    <a href="/#">Get help</a> signing in
+                    <a>Get help</a> signing in
                   </p>
                 </div>
               </form>
@@ -112,7 +112,7 @@ const Login = () => {
                 <div className={`heading`}>
                   <h2>Get Started</h2>
                   <h6>Already have an account? </h6>
-                  <a href="/#" className={`toggle`}>
+                  <a className={`toggle`}>
                     Sign In
                   </a>
                 </div>
@@ -147,8 +147,8 @@ const Login = () => {
 
                   <p className={`text`}>
                     By signing up, I agree to the{" "}
-                    <a href="/#">Terms of Services</a> and{" "}
-                    <a href="/#">Privacy Policy</a>
+                    <a>Terms of Services</a> and{" "}
+                    <a>Privacy Policy</a>
                   </p>
                 </div>
               </form>
@@ -181,4 +181,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginBoss;
